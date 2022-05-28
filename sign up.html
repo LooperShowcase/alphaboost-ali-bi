@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4OAgf?ver=6a31">
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="contct.html">contct</a></li>
+    <li><a href="sign up.html">sign up</a></li>
+    <li id ="ter"> <input id="colorpicker" onchange="coloorchange()" type="color"></li>
+  </ul>
+
+  
+</body>
+ <div id="mystyle">
+    <form>
+        <label> Email: </label>
+        <input type="email" style="background-color: blue;">
+        <label>password: </label>
+        <input type="password">
+        <input id="imgepiker" type="file" onchange="profilechange()">
+        <img  id ="profpic" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" width="10%">
+   
+   
+        <form>
+ </div>
+
+ <script>
+    function profilechange(){
+    var newimg = document.getElementById("imgepiker").files[0].name;
+    document.getElementById("profpic").src=newimg;
+   }
+
+ </script>
+
+
+</body>
+</html>
